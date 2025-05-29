@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
+        <title>AstroGIG | Personal Profile Card</title>
+        <style>
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+                background-color: #000000;
+                color: white;
+                font-family: "Geologic", sans-serif;
+            }
+            h1{
+                font-size: 3.5em;
+            }
+            h1 > span {
+                position: relative;
+                display: inline-block;
+                color: #ff8800;
+                height: 1.25em;
+                vertical-align: bottom;
+                overflow: hidden;
+            }
+            h1 > span > span {
+                display: block;
+                animation: animateWords 5s infinite ease;
+            }
+            @keyframes animateWords {
+                0% {transform: translateY(0%);}
+                25% {transform: translateY(-100%);}
+                50% {transform: translateY(-200%);}
+                75% {transform: translateY(-300%);}
+                100% {transform: translateY(-400%);}
+            }
+        </style>
+
+        <body>
+            <h1>
+                I'M A 
+                <span>
+                    <span>CODER</span>
+                    <span>DEVELOPER</span>
+                    <span>DESIGNER</span>
+                    <span>PROGRAMMER</span>
+                    <span>FREELANCER</span>
+                </span>
+            </h1>
+            <div class="social-icon">
+                <span><i class="bx bxl-facebook"></i></span>
+                <span><i class="bx bxl-linkedin"></i></span>
+                <span><i class="bx bxl-YouTube"></i></span>
+                <span><i class="bx bxl-github"></i></span>
+            </div>
+        </body>
+    </head>
+</html>
